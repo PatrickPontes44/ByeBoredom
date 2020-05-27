@@ -3,7 +3,7 @@ const PARAGRAPH = document.querySelector(".final-ideas");
 
 const fetchAPIIdeas = ()=>{
     let PARTICIPANTS = document.querySelector(".participants").value;
-    const URL_TO_API = `http://www.boredapi.com/api/activity?participants=${PARTICIPANTS}`;
+    const URL_TO_API = `https://www.boredapi.com/api/activity?participants=${PARTICIPANTS}`;
 
     fetch(URL_TO_API)
     .then(response => response.json()) // retorna uma promise  
