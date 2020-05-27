@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free easy ideas to escape boredom.">
+    <meta name="keywords" content="ByeBoredom, ideas to escape boredom, stuck at home, things to do at home,
+     things to do at home when bored, things to do at home alone, things to do at home for fun, things to do at home with family">
+     <link rel="shortcut icon" href="./img/ByeBoring - icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>ByeBoredom</title>
+</head>
+<body>
+    <header>
+        <h1 onclick="location.reload()">ByeBoredom</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            
+            <div class="image-container">
+                <img src="./img/background.svg" alt="ByeBoring logo image">
+            </div>
+
+            <div class="input-container">
+                <button type="button" onclick="fetchAPIIdeas()">Find Ideas</button>
+                <div class="label-input-container">
+                    <label for="participants">Number of Participants (Max. 5)</label>
+                    <input type="number" class="participants" name="participants" maxlength="1" max="5" min="1" value="1">
+                </div>
+                <p class="final-ideas"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer> Thanks to &nbsp;<a href="https://www.boredapi.com/">Bored API</a></footer>
+    <script src="./utils/app.js"></script>
+</body>
+</html>
